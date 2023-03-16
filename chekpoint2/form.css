@@ -1,0 +1,56 @@
+body{
+    background-color: #807f7d;
+    margin: 0px;
+    padding: 0px;}
+    form{
+        position:absolute;
+     top: 50%;
+     left: 50%; 
+     transform: translate(-50%, -50%); 
+     background-color:white;
+     padding: 30px;
+     border-radius: 20px;
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap" rel="stylesheet">
+   h1{
+    font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+   }
+
+   #label{
+    font-weight: 200;
+    
+   }
+.separation{
+    width: 100%;
+    height: 2px;
+    background-color: bisque;
+    padding: auto;
+}
+.corpsformulaire{
+     display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 25%;
+}
+ .groupe
+{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+} 
+.gauche input{
+margin-top: 5px;
+padding: 10px 5px 10px 30px;
+border: 1px solid #c9c9c9;
+outline-color: #141414;
+}
+.droite textarea{
+    margin-top: 5px;
+padding: 30px 5px 130px;
+margin-left: 5px;
+margin-right: 10px;
+border: 1px solid #c9c9c9;
+outline-color: #141414;
+}

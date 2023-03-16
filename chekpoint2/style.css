@@ -1,0 +1,29 @@
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+background-color: rgb(73, 72, 75);
+overflow: hidden;
+}
+li {
+    float: left;
+    margin: 20px;
+}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap" rel="stylesheet">
+li a{
+    color: blanchedalmond;
+    padding:60;
+    text-decoration: dotted;
+    display: block;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+}
+li a:hover{
+    background-color: rgb(196, 245, 245);
+    padding: 10px;
+    border-radius: 30px;
+
+}
