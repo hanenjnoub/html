@@ -1,0 +1,90 @@
+.item{
+   
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* **************** FLEX BOX ************************************** */
+
+/* .container{
+    width: 500px;
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+   /* flex-direction: row-reverse; */
+   /* aligner  et déterminer l'espace et leur position par rapport leurs parents selon X */
+   /* justify-content: space-evenly;
+     flex-wrap: wrap; 
+     /* align-content: center */
+   /*  gap : 20px 30px;
+} */
+
+#item1{
+    /* flex-grow: 3; */
+   /*  flex-basis: 200px; */
+   /* align-self: center; */
+  
+
+}
+
+/* ************************ GRID **************************************************/
+
+.container{
+    display:grid;
+      /* déterminer l'affichage des items en nbr de colonne / ligne */
+      grid-template-columns: auto auto auto;
+      
+    /* déterminer l'affichage des items en nbr de ligne / colonne
+    grid-template-rows: 200px 500px;
+    /* gap:20px */
+}
+
+#item1{
+    /* grid-column-start: 1;
+    grid-column-end: span 2; */
+    /*shorthand */
+   /*  grid-column: 1/ span 2; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* shorthand */
+    /* grid-row: 1 / 3; */
+
+    /* shorthand for  grid-column and grid-row; */
+    grid-area: 1 / 1 / 3 / span 2 ;
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        background-color: brown;
+    }
+}
+
+.logo-docplanner {
+    width: 268px;
+    height: 33px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

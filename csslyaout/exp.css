@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0px
+  }
+ 
+  header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100vw
+  
+  }
+  .logo-docplanner{
+    width:268;
+    height:33px;
+    padding:12px
+  
+  }
+  
+  header ul{
+    display:flex
+  }
+  header ul li{
+    list-style-type:none;
+    display:flex;
+    padding:8px;
+  }
+  
+  header ul li .menu-item{
+    text-decoration:none;
+    color:#ababab
+  }
+  .menu-item-about{
+    color:#1abba5;
+    text-decoration:none
+  }
+  .menu-item:hover{
+    color:#1abba5
+  }
+  .dropdown{
+  flex-direction: column;
+    position: absolute;
+    padding: 25px ;
+    padding-left: 0px;
+    display: none;
+    }
+  .dropdown a{
+    text-decoration: none;
+    color:#ababab;
+  
+  
+  }
+  .menu-item-drop:hover + .dropdown{
+    display: flex;
+  
+  }
+  .dropdown:hover{
+    display:flex;
+  }
+  .lead__logo{
+    display: block;
+    margin: 0 auto ;
+  
+  }
+  h1{
+    text-align: center;
+    color: #00b39b;
+    margin-top: 15px;
+    margin-bottom:15px;
+  
+  
+  }
+  .intro{
+    display:flex;
+    justify-content: space-between;
+  
+  }
+  .intro p {
+    margin: 10px 60px 10px 60px;
+    line-height: 1.5;
+  }
+  .Auditory{
+    display:flex;
+    justify-content: center;
+     align-content: space-between; 
+    font-size: 20px;
+  
+  
+  }
+  .ForDoctors{
+    margin: 0px 15px;
+    background-color: #3d83df;
+    border-radius: 15px;
+    height: 300px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px ;
+  
+  
+  }
+  
+  .ForPatients{
+    margin: 0px 15px;
+    background-color: #00b39b;
+    border-radius: 15px;
+    height: 300px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px ;
+  
+  
+  }
+  .ForClinics{
+    margin: 0px 15px;
+    background-color: #1b2734;
+    border-radius: 15px;
+    height: 300px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px ;
+  
+  
+  
+  }
+  #selectList{
+    margin-bottom: 30px;
+    margin-left: 50px;
+    display:block;
+    background:transparent; 
+  /*   outline: none; */
+  /*   border-style:none; */
+  /*   border-color:transparent; */
+    border:0;
+  
+  
+  
+  
+  }
+  .ForPatients p{
+    width:300px;
+    margin-top: 10px;
+  
+  }
+  .ForDoctors p{
+    width:300px;
+    margin-top: 10px;
+  
+  }
+  .ForClinics p{
+    width:300px;
+    margin-top: 10px;
+  
+  }
+  .section__inner{
+    display:flex;
+     /* justify-content: center; */
+     align-content: space-between; 
+    margin-top: 20px;
+  }
+  .section_left{
+  text-align: left;
+  margin-left: 100px;
+    /* margin-right: 50px; */
+  }
+  .section_reight{
+    margin-left: 200px;
+  }
+  .brands__logos{
+    list-style-type:none;
+    display: grid;
+    /* nombre de colone */
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-gap: 10px;
+    
+  }
+  .items2{
+    background-color: #ddd;
+  border: 1px solid black;
+  padding: 20px;
+    
+  }
