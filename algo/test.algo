@@ -1,0 +1,33 @@
+ALGORITHM permutation
+VAR
+   x,y,z,aux:INTEGER 
+BEGIN
+  wirte("ecrire x,y,z")
+  read(x,y,z)
+  aux:=x
+  x:=y
+  z:=aux
+END
+ALGORITHM phrase
+VAR
+   c: CHAR:="" //variable pour utilisateur
+   nb_char:INTEGER:=0
+   nb_voy:INTEGER:=0
+   nb_word:INTEGER:=0
+
+BEGIN
+    write("ecrire c")
+    read(c)
+WHILE (c<>".") DO
+    nb_char= nb_char+1
+    if (c="a" or c="e" OR c="i" OR c="o" OR c="u" OR c="y" ) then
+    nb_voy=nb_voy+1
+   end if
+   if(c=" ") then
+   nb_word=nb_word+1
+   endif
+END_WHILE
+write("nombre de cararctere est ", nb_char)
+write("nombre de voyelle est " nb_voy)
+write("nombre de word est " nb_word)
+END

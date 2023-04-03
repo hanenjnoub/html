@@ -1,0 +1,148 @@
+
+  ALGORITHM distinct-elem
+VAR
+    set1,set2 : ARRAY_OF INTEGER[20];
+    i,j : INTEGER;
+    sum : INTEGER :=  0;
+    found : BOOLEAN;
+BEGIN
+    // reading elements in the two sets
+
+    // Compare each element of set one with the second set 
+    // and if element is not present then add that element to sum.
+
+    FOR i FROM 0 TO set1.length-1 DO
+        found := FALSE;
+        FOR j FROM 0 TO set2.length-1 DO
+            IF(set1[i] = set2[j]) THEN
+                found := TRUE;
+                BREAK;
+            END
+        END_FOR
+        IF (NOT found) THEN
+            sum := sum + set1[i];
+        END_IF
+    END_FOR
+
+    //Then do the vice versa to add elements from the second set. 
+    FOR i FROM 0 TO set2.length-1 DO
+        found := FALSE;
+        FOR j FROM 0 TO set1.length-1 DO
+            IF(set2[i] = set1[j]) THEN
+                found := TRUE;
+                BREAK;
+            END
+        END_FOR
+        IF (NOT found) THEN
+            sum := sum + set2[i];
+        END_IF
+    END_FOR
+
+    Write(sum);
+END
+
+ALGORITHM chaine
+VAR
+    ch:STRING;
+   chreverse:STRING;
+BEGIN
+palindrome:=false;
+  FOR i FROM lenth(ch) TO 1 STEP -1  DO
+        chreverse:=chreverse+CHAR(ch,i);
+
+END_FOR
+
+    if (chreverse=ch) then
+    write("est un palindrome")
+    else 
+    write("n'est pas un palindrome")
+    end if
+
+END
+//ALGORITHM produit-scalaire
+VAR
+    V: ARRAY_OF float[3];
+    U: ARRAY_OF float[3];
+    i:integer
+    n:integer
+    Ps:float
+BEGIN
+    for i FROM 0 to n-1 DO
+    write("donner les valeur du tableau ") 
+    red("U[i]")
+    end_For
+    for i From 0 to n-1 DO
+    write("donner les valeur du tableau ") 
+    red("V[i]")
+    end_For
+    Ps:=0
+    for i FROM 0 to n-1 DO
+    Ps:= PS+(V[i]*U[i])
+    END_FOR
+    return Ps 
+//END
+PROCEDURE dot-product(V1,V2: ARRAY_OF integer[length]; var PS: integer)
+VAR
+    i:INTEGER
+    n:INTEGER
+BEGIN
+   if (v1.length<> v2.length) THEN
+   write(" vector widht are different")
+   Ps:=0
+   n:=v1.length
+   else
+   for i FROM 0 To n-1
+   Ps:= Ps+(v1[i]*v2[i])
+   END_FOR
+   END_IF
+END
+ALGORITHM principal
+VAR
+     v1: ARRAY_OF integer[200];
+     v1: ARRAY_OF integer[200];
+     Ps:integer;
+BEGIN
+    dot-product(V1,V2,var PS)
+    if (Ps=0) THEN
+    Write("v1 v2 rigth ortogonal")
+    else
+     Write("v1 v2 are not rigth ortogonal")
+     End_if
+END
+FUNCTION dot-product(V1,V2: ARRAY_OF integer[200]):integer
+
+ VAR
+    i:INTEGER
+    n:INTEGER
+    Ps:INTEGER
+BEGIN
+   if (v1.length<> v2.length) THEN
+   write(" vector widht are different")
+   Ps:=0
+   n:=v1.length
+   else
+   for i FROM 0 To n-1
+   Ps:= Ps+(v1[i]*v2[i])
+   END_FOR
+   END_IF
+   RETURN PS;
+END
+ALGORITHM principal
+VAR
+     v1: ARRAY_OF integer[200];
+     v1: ARRAY_OF integer[200];
+     Ps:integer;
+BEGIN
+    PS:=dot-product(v1,V2)
+    if (Ps=0) THEN
+    Write("v1 v2 rigth ortogonal")
+    else
+     Write("v1 v2 are not rigth ortogonal")
+   END_IF
+END
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
